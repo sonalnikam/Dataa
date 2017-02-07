@@ -15,7 +15,7 @@
 <center>Hello 
 <% 
 
- Class.forName("com.mysql.jdbc.Driver"); 
+// Class.forName("com.mysql.jdbc.Driver"); 
               //  String envVar = System.getenv("MYSQL_URL");
                
             //  Connection c =DriverManager.getConnection(envVar);  
@@ -29,13 +29,13 @@
              // String url = "jdbc:mysql://" + HOST + ":" + PORT +
                     "/" + DB_NAME;
             //  Connection con = DriverManager.getConnection(url, USERNAME, PASSWORD);     
-            String url="jdbc:mysql://172.30.54.105:3306/sampledb" ;
-             Connection c =DriverManager.getConnection(url,"sonal","sonal");
+            //String url="jdbc:mysql://172.30.54.105:3306/sampledb" ;
+             //Connection c =DriverManager.getConnection(url,"sonal","sonal");
             
               String r1=request.getParameter("n1");
-              PreparedStatement pstmt=con.prepareStatement("insert into  attend values(?)");
-              pstmt.setString(1,r1);
-              pstmt.executeUpdate();
+             // PreparedStatement pstmt=con.prepareStatement("insert into  attend values(?)");
+             // pstmt.setString(1,r1);
+              //pstmt.executeUpdate();
 out.print(r1);
 %></center>
 </h1>
