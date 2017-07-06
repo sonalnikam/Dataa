@@ -12,4 +12,4 @@ unzip appdynamics.zip
    popd
 rm -rf abcd-master/
 rm -f appdynamics.zip
-popd
+
