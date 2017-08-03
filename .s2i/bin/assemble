@@ -1,14 +1,1 @@
-#!/bin/bash
 
-run original assemble script
-/usr/local/s2i/assemble
-
-install appdynamics agent
-curl -H "Accept: application/zip" https://codeload.github.com/sonalnikam/abcd/zip/master -o /home/jboss/source/appdynamics.zip
-
-pushd /home/jboss/source
-unzip appdynamics.zip
-  mv abcd-master/ ../
- 
-rm -rf abcd-master/
-rm -f appdynamics.zip
